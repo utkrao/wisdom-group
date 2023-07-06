@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="anim.css">
+  <link rel="stylesheet" href="loading.css">
+  <link rel="stylesheet" href="footer.css">
+  <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3f02161c59.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="water"></div>
+  </div>
+  <div class="sideline-btm none"></div>
+  <div class="sideline-top none"></div>
+  <nav class="nav swipe">
+    <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen'></i>
+      <span class="logo navLogo"><a href="#">CW GROUP</a></span>
+
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="#">CW GROUP</a></span>
+          <i class='bx bx-x siderbarClose'></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#carrer">Career</a></li>
+          <li><a href="#review">Reviews</a></li>
+        </ul>
+      </div>
+
+      <div class="darkLight-searchBox">
+        <div class="dark-light">
+        </div>
+
+        <div class="searchBox">
+          <div class="searchToggle">
+            <a class="cirbox" href="#contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon" fill="currentcolor">
+                <path
+                  d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="sidenav  none ">
+    <ul>
+      <a href="https://www.facebook.com/profile.php?id=100069388419443">
+        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="side-icon" fill="currentcolor">
+            <path
+              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+          </svg></li>
+      </a>
+      <a href="https://www.linkedin.com/company/capital-wisdom-group/">
+        <li> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="side-icon" fill="currentcolor">
+            <path
+              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+          </svg></li>
+      </a>
+      <a href="https://www.instagram.com/capital_wisdom_group?r=nametag">
+        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></li>
+      </a>
+    </ul>
+  </section>
+  <section id="slide-show">
+    <div class="slidex activx">
+      <div class="bg1">
+        <div class="slider-center">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="slidex">
+      <div class="bg2">
+        <div class="slider-center">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="slidex">
+      <div class="bg3">
+        <div class="slider-center">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="slidex last">
+      <div class="bg4">
+        <div class="slider-center">
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="black-main">
+
+  </section>
+
+  <div class="head-content" id="home">
+    <div class="heading"><span class="h-1">BUILDING</span> <br>WORLD CLASS <span class="h-2">SALES</span>
+      AND <span class="h-2">SERVICES</span> ORGANIZATIONS</div>
+    <a class="explore rightpol" href="#footer"> explore </a>
+  </div>
+  <div class="fs bar"> <svg class="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+      <path fill="currentColor"
+        d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z">
+      </path>
+    </svg>
+  </div>
+  <div class="fs arrow-up">
+    <a href="" class="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="black-arrow bounce">
+        <path
+          d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z" />
+      </svg>
+    </a>
+
+  </div>
+  <section class="about" id="about">
+    <div class="about-us">
+      <div class="box2" data-aos="flip-left">
+        <img src="undraw_co-working_re_w93t.svg" alt="about us" class="i1">
+        <!--<img src="undraw_co-working_re_w93t.svg" alt="about us" class="i2">
+            <img src="undraw_co-working_re_w93t.svg" alt="about us" class="i3">
+            <img src="undraw_co-working_re_w93t.svg" alt="about us" class="i4">-->
+      </div>
+      <div class="box1" data-aos="flip-right">
+        <h1 class="head anim"><span><i>A</i><i>b</i><i>o</i><i>u</i><i>t</i></span> Us</h1>
+        <p class="about-content swipe">We, Capital Wisdom Group is a visionary Company in the market which helps
+          to get best possible financial deals with the help of our expertise channel partners. We believe
+          every day comes with an opportunity to serve better, deliver something great and delight a customer. 
+          We work tirelessly to craft the right solution and to execute
+          the decision made. We will not rest till we search our goal. 
+          We are a team having <b>5+ years</b> of experience in the market united with a common goal.</p>
+      </div>
+    </div>
+  </section>
+  <div class="quote1">
+    <div class="text" data-aos="fade-up"><i>'' Capital wisdom Group is uniquely qualified to transform your sales and
+        service organization from the ground up because <span>we know what works</span></i> ''</div>
+  </div>
+  <section class="partners">
+    <div class="p-head" data-aos="fade-up">Who can be our <span>partners</span></div>
+    <div class="line_c">
+      <div class="line" data-aos="fade-up"></div>
+    </div>
+    <div class="partner-wrapper">
+      <div class="card one" data-aos="fade-up">
+        <div class="cardhead">Self-Employeed</div>
+        <div class="cardtext">Work smarter, not harder. Earn extra income by leveraging your network. You don't need any
+          additional capital to start earning with us.</div>
+      </div>
+      <div class="card two" data-aos="fade-up">
+        <div class="cardhead">Agents</div>
+        <div class="cardtext">Make money while helping people. If you are a LIC or insurance agent, real estate broker,
+          network marketing person etc become our partner and start earning more.</div>
+      </div>
+      <div class="card three" data-aos="fade-up">
+        <div class="cardhead">Ex Bankers</div>
+        <div class="cardtext">Make use of your experience. Become our partner and earn extra income by assisting others
+          with their financial needs.</div>
+      </div>
+      <div class="card four" data-aos="fade-up">
+        <div class="cardhead">Salaried People</div>
+        <div class="cardtext">Work for yourself. Earn extra income by working in your spare time for us.</div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="servicehead" data-aos="fade-up">What <span>SERVICES</span> do we provide <span>?</span></div>
+    <div class="line_c">
+      <div class="line" data-aos="fade-up"></div>
+    </div>
+    <section class="card-container">
+      <div class="cards">
+        <div class="s-card" data-aos="fade-up">
+          <div class="circlelogo"><i class="fa-solid fa-street-view"></i></div>
+          <p class="card-heading">Personal Loan</p>
+          <p class="card-content">Personal loan for everyone. Digital paperless process from multiple banks. Fast
+            disbursals.</p>
+        </div>
+        <div class="s-card" data-aos="fade-up">
+          <div class="circlelogo"><i class="fa-solid fa-house-chimney"></i></div>
+          <p class="card-heading">Home Loan</p>
+          <p class="card-content">Home loans for all income types. Affordable housing to luxuries with best
+            interest rates.</p>
+        </div>
+        <div class="s-card" data-aos="fade-up">
+          <div class="circlelogo"><i class="fa-solid fa-car"></i></div>
+          <p class="card-heading">Car Loan</p>
+          <p class="card-content">Fulfill your customers dream of owning a car with loan offers from leading
+            banks.</p>
+        </div>
+        <div class="s-card" data-aos="fade-up">
+          <div class="circlelogo"><i class="fa-solid fa-briefcase"></i></div>
+          <p class="card-heading">Business Loan</p>
+          <p class="card-content">Each business is unique with specific requirements. We can get secured and
+            unsecured business loans for variety of businesses all across India.</p>
+        </div>
+        <div class="s-card" data-aos="fade-up">
+          <div class="circlelogo"><i class="fa-solid fa-map"></i></div>
+          <p class="card-heading">Project Loan</p>
+          <p class="card-content">Personal loan for everyone. Digital paperless process from multiple banks. Fast
+            disbursals.</p>
+        </div>
+        <div class="s-card" data-aos="fade-up">
+          <div class="circlelogo"><i class="fa-solid fa-building"></i></div>
+          <p class="card-heading">Real-estate consulting with finance Loan</p>
+          <p class="card-content">Real-estate consulting with finance loan for anyone who is willing to buy some
+            plot for contruction purpose.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+  
+  <div class="quote2" id="carrer">
+    <div class="head-q" data-aos="fade-up">
+      Want to work with us ?
+    </div>
+    <div class="head-q1" data-aos="fade-up">
+      Apply now and become a part of capital wisdom group
+    </div>
+    <a href="" data-aos="fade-up">APPLY</a>
+  </div>
+  <section class="statistics">
+    <div class="stats">
+      <div class="statcard">
+        <div class="symbolstat">
+          <i class="fa-solid fa-people-group"></i>
+        </div>
+        <div class="textstat">
+          <span id="1">100</span>+ <br>clients
+        </div>
+      </div>
+      <div class="statcard">
+        <div class="symbolstat">
+          <i class="fa-solid fa-people-roof"></i>
+        </div>
+        <div class="textstat">
+          <span id="2">20</span>+ <br>employees
+        </div>
+      </div>
+      <div class="statcard">
+        <div class="symbolstat">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <div class="textstat">
+          <span id="3">5</span>+ <br>financial advisors
+        </div>
+      </div>
+      <div class="statcard">
+        <div class="symbolstat">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <div class="textstat">
+          <span id="4">10</span>+ <br>Leading Partner
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviews" id="review">
+    <div class="reviewhead" data-aos="fade-up">
+      reviews
+    </div>
+    <div class="reviewsubhead" data-aos="fade-up">
+      <b>What our customers say about us</b>
+    </div>
+    <div class="line_c">
+      <div class="line" data-aos="fade-up"></div>
+    </div>
+    <div class="slideshow-container" data-aos="fade-up">
+
+      <div class="mySlides">
+        <div class="review">
+          <div class="reviewsec1">
+            <img src="unnamed.png" alt="" class="reviewimg">
+          </div>
+          <div class="reviewsec2">
+            <p>I am extremely happy with capital wisdom group. They will help you in and out and they will be helping
+              for you for all the requirements that you have. I highly recommend capital wisdom group and they have
+              helped me a lot and whatever will be the best for their customers they will try their best to give you
+              that services keeping in mind of customer satisfaction specially Amit he is the one who is very genuine
+              person.</p>
+            <p class="author">- Aarav Singh</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="review">
+          <div class="reviewsec1">
+            <img src="unnamed (1).png" alt="" class="reviewimg">
+          </div>
+          <div class="reviewsec2">
+            <p>Great service I received from Mr. Amit from Capital Wisdom Group, Excellent efficient communication and a
+              really easy way to get a mortgage with on time help and support to get the right deal.</p>
+            <p class="author">- shreyas joshi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="review">
+          <div class="reviewsec1">
+            <img src="unnamed (2).png" alt="" class="reviewimg">
+          </div>
+          <div class="reviewsec2">
+            <p>I like it when people are responsive and Amit is very good at this. Called quick, give information and
+              processed loan application fast. Got a high value debt consolidation with Capital wisdom group. Really
+              delighted</p>
+            <p class="author">- Sunny Ramteke</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  </div>
+
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <section id="contact">
+    <div class="contact-box">
+      <div class="contact-links">
+        <h2>CONTACT</h2>
+        <div class="details">
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              Kothrud, Pune, Maharashtra.
+            </li>
+            <li><i class="fa-solid fa-phone"></i>+91 6204644100</li>
+            <li><i class="fa-solid fa-envelope"></i>testmail@gmail.com</li>
+          </ul>
+        </div>
+        <div class="links">
+          <div class="link">
+            <a href="https://www.linkedin.com/company/capital-wisdom-group/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div class="link">
+            <a href="https://www.facebook.com/profile.php?id=100069388419443"><i class="fa-brands fa-square-facebook"></i></a>
+          </div>
+          <div class="link">
+            <a href="https://www.instagram.com/capital_wisdom_group?r=nametag"><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <p class="right-head">Mail Your Query</p>
+              <form action="mailto:asawai7875@gmail.com" method="post" enctype="text/plain">
+                  <div class="form-item">
+                      <input type="text" name="sender" required placeholder="Name">
+                  </div>
+                  <div class="form-item">
+                      <input type="text" name="email" required placeholder="Email">
+                  </div>
+                  <div class="form-item">
+                    <input type="text" name="message" required placeholder="message" class="message">
+                  </div>
+                  <button class="submit-btn">Send</button>
+              </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="footsvg">
+    <svg class="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+      viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+      <path fill="currentColor"
+        d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z">
+      </path>
+    </svg>
+    <div class="footertop">njkebebfjkdas</div>
+    <div class="footerbtm"></div>
+  </div>
+
+  <footer>
+    <div class="content">
+      <p class="ab">klcjbvjrehknsdwhjsgh</p>
+    </div>
+  </footer> -->
+
+  <div class="copyright" id="footer">
+    <svg class="svg-up" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="#262526" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
+    <i class="fas fa-angle-double-up arrow-up"></i>
+    <ul class="info">
+        <li>&copy; Capital Wosdom Group</li>
+        <li>Tel: 072760 63476</li>
+        <li>Handcrafted with love by <a href="https://www.linkedin.com/in/s-utkarsh-rao-21b124211/">DevNow</a> Team</li>
+    </ul>
+    <ul class="CTA">
+        <li><a href="#">PERMISSIONS AND COPYRIGHT</a></li>
+        <li><a href="#contact">CONTACT THE TEAM</a></li>
+    </ul>
+</div>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      var $next = $('.nextx');
+      var mode = "auto";
+
+      setInterval(function () {
+        if (mode === "auto") {
+          showNextImage();
+        }
+      }, 5000);
+      function showNextImage() {
+        var $actEl = $('.activx');
+        var $nextEl = $actEl.next('.slidex');
+        if ($nextEl.length) {
+          $actEl.removeClass('activx');
+          $nextEl.addClass('activx');
+        } else {
+          $actEl.removeClass('activx');
+          $('.slidex:first-child').addClass('activx');
+        }
+      }
+    });
+  </script>
+  
+  <script>
+    $(window).on("load", function () {
+      $(".wrapper").fadeOut("slow");
+      $(".heading").addClass("expand");
+      $(".h-1").addClass("expand");
+    });
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      var headerr = document.querySelector('nav');
+      headerr.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+  <script>
+    const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+    let getMode = localStorage.getItem("mode");
+    if (getMode && getMode === "dark-mode") {
+      body.classList.add("dark");
+    }
+    // js code to toggle dark and light mode
+    modeToggle.addEventListener("click", () => {
+      modeToggle.classList.toggle("active");
+      body.classList.toggle("dark");
+
+      // js code to keep user selected mode even page refresh or file reopen
+      if (!body.classList.contains("dark")) {
+        localStorage.setItem("mode", "light-mode");
+      } else {
+        localStorage.setItem("mode", "dark-mode");
+      }
+    });
+    // js code to toggle search box
+    searchToggle.addEventListener("click", () => {
+      searchToggle.classList.toggle("active");
+    });
+    //   js code to toggle sidebar
+    sidebarOpen.addEventListener("click", () => {
+      nav.classList.add("active");
+    });
+    body.addEventListener("click", e => {
+      let clickedElm = e.target;
+
+      if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+        nav.classList.remove("active");
+      }
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+    });
+
+  </script>
+  <script>
+    window.addEventListener('scroll', () => {
+      let content = document.querySelector('.anim');
+      let contentPos = content.getBoundingClientRect().top;
+      let screenPos = window.innerHeight;
+      if (contentPos < screenPos) {
+        content.classList.add('active');
+      }
+      else {
+        content.classList.remove('active');
+      }
+    });
+  </script>
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active1", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active1";
+    }
+    window.onload = function () {
+      setInterval(function () {
+        plusSlides(1);
+      }, 10000);
+    }
+
+  </script>
+</body>
+
+</html>

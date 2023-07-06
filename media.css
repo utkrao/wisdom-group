@@ -1,0 +1,193 @@
+@media (max-width: 1000px)
+{
+    html
+    {
+        font-size: 85%;
+    }
+    .partner-wrapper
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 40px;
+    }
+    .about-us
+    {
+        margin: 0;
+    }
+    .stats
+    {
+        
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 790px)
+{
+    html
+    {
+        font-size: 60%;
+    }
+    .about-us
+    {
+        margin: 0 50px;
+    }
+    .partner-wrapper
+    {
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+    }
+
+    .card .cardhead
+    {
+        font-size: 3.5rem;
+    }
+    .card .cardtext
+    {
+        font-size: 2rem;
+    }
+    .about-us {
+        grid-template-columns: 1fr;
+      }
+      .head 
+      {
+        margin-top: 50px;
+        text-align:  center;
+        font-size:3.5rem;
+      }
+      .about-content
+      {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0 50px;
+      }
+      .slideshow-container
+      {
+        width: 100%;
+      }
+      .review
+      {
+        display: block;
+      }
+      .reviewsec1 img
+      {
+        width: 0;
+        height: 0;
+        display: none;
+        margin-bottom: 20px;
+      }
+      .dot-container {
+        opacity: 1;
+    }
+      .reviewsec2 
+      {
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .textstat
+      {
+        font-size: 2rem;
+      }
+      .textstat span
+      {
+        font-size: 3rem;
+      }
+
+}
+@media (max-width: 900px){
+    .copyright{
+        padding: 15px 0 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .copyright li {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px){
+    .copyright li {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 790px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+    .about-content
+    {
+      padding: 0 20px;
+    }
+    .i1
+    {
+        width: 60%;
+    }
+    .card-heading
+    {
+        font-size: 3rem;
+    }
+    .card-content
+    {
+        font-size: 2rem;
+        line-height: 30px;
+    }
+    .details ul li 
+{
+    font-size: 20px;
+}
+}
+@media (max-width: 450px)
+{
+    html
+    {
+        font-size: 40%;
+    }
+    .head-content .explore
+    {
+        font-size: 1.5rem;
+    }
+    .none
+    {
+        display: none;
+    }
+    .heading
+    {
+        width: 70%;
+    }
+    .about-content
+    {
+      padding: 0 5px;
+    }
+    .quote1 .text
+    {
+        font-size: 2.5rem;
+        padding: 100px 15%;
+    }
+    .card-heading
+    {
+        font-size: 3.5rem;
+    }
+    .card-content
+    {
+        font-size: 2.5rem;
+    }
+    .s-card {
+        padding: 50px 10px;
+        height: 400px;
+      }
+    .stats
+    {
+        grid-template-columns: 1fr;
+    }
+    .details ul li
+    {
+        font-size: 1.5rem;
+    }
+    .contact
+    {
+        padding-bottom: 100px;
+    }
+
+}

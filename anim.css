@@ -1,0 +1,61 @@
+/**/
+.rightpol
+{
+  animation: rightpol ease 2s;
+}
+
+.expand
+{
+  animation: expand ease 2s;
+}
+.swipe
+{
+  animation: swipe ease 4s;
+}
+.box1 .anim
+{
+  letter-spacing: 0px;
+  transition: all 2s ease-in-out;
+  transform: scale(0.1);
+
+}
+.box1 .active{
+  letter-spacing: 4px;
+  transform: scale(1);
+}
+
+@keyframes swipe{
+  0%{
+    clip-path: inset(0 100% 0 0);
+  }
+  100%
+  {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes expand{
+  0%{
+    opacity: 0%;
+    letter-spacing: -2px;
+  }
+  40%{
+    letter-spacing: 2px;
+  }
+  100%
+  {
+    letter-spacing: auto;
+    opacity: 100%;
+  }
+}
+
+@keyframes rightpol{
+  0%
+  {
+    clip-path: circle(6.8% at 50% 50%);
+  }
+  100%
+  {
+    clip-path: circle(70.7% at 50% 50%);
+  }
+}
